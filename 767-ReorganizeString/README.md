@@ -20,6 +20,7 @@ Constraints:
 
 
 ### Solution Explanation
+[Referenced Solution](https://leetcode.com/problems/reorganize-string/description/)
 
 This solution attempts to reorganize the input string `s` such that no two adjacent characters are the same. It leverages a **max-heap** (simulated using Python's `heapq` with negative frequencies) to repeatedly pick the character with the highest remaining frequency. The approach ensures that at each step, the most frequent character is chosen, and the previously used character is pushed back into the heap (if it still has remaining frequency) to be used again later. The key idea is that the character with the highest frequency is used strategically to avoid consecutive placements.
 
