@@ -55,3 +55,14 @@ Constraints:
 	1 <= w[i] <= 105
 	pickIndex will be called at most 104 times.
 
+Solution referencing to [video](https://www.youtube.com/watch?v=7x7Ydq2Wfvw).
+
+### Overall Time and Space Complexity:
+#### Time Complexity:
+
+__init__: O(n) for constructing the prefix_sums array.
+pickIndex: O(log n) for performing a binary search to find the appropriate index.
+
+#### Space Complexity:
+
+O(n) for storing the prefix_sums array.
