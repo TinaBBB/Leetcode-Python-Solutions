@@ -30,6 +30,7 @@ Constraints:
 	grid[i][j] is either 0 or 1.
 	grid[0][0] == grid[m - 1][n - 1] == 0
 
+Solution referring to this [video](https://www.youtube.com/watch?v=VPleGcc1nZY).
 
 ## Time Complexity
 - **Time complexity**: \( O(rows * cols * k) \)
