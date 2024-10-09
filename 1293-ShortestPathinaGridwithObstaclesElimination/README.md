@@ -30,3 +30,12 @@ Constraints:
 	grid[i][j] is either 0 or 1.
 	grid[0][0] == grid[m - 1][n - 1] == 0
 
+
+## Time Complexity
+- **Time complexity**: \( O(rows * cols * k) \)
+  - The BFS explores all cells in the grid, and for each cell, it may explore different obstacle removal states up to `k` times.
+
+## Space Complexity
+- **Space complexity**: \( O(rows * cols * k) \)
+  - The queue and the set `seen` store all possible states during the BFS traversal.
+
