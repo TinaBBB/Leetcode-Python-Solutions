@@ -21,3 +21,7 @@ class Solution:
                 opt_decisions[state] = min(opt_decisions[state], reward_of_actions+opt_decisions[state-action])
         
         return opt_decisions[amount] if opt_decisions[amount] < amount +1 else -1
+
+
+# Time: O(amount * len(coin))
+# Space: O(amount)
