@@ -4,6 +4,8 @@ class Solution:
         # The last state is at the last index, where its LIS have a length of 1.
         # Last the second-last index, the longest sequence would be either including just itself or 
         # including itself + the LIS of some later indecies that have a number greater than it.
+        # Time: O(n^2)
+        # Space: O(n)
 
         # Memoization initialization
         LIS = [1] * len(nums)
