@@ -26,31 +26,31 @@ class Solution:
         
         return last_row[0]
                 
-            # # Top-down solution
-            # # Time: O()
-            # # Space: O()
-            # total_sum = sum(num)
-            # if total_sum % 2 != 0:
-            #   return False
+        # # Top-down solution, very slow.
+        # # Time: O()
+        # # Space: O()
+        # total_sum = sum(nums)
+        # if total_sum % 2 != 0:
+        #     return False
 
-            # target_sum = sum(num)/2
-            # cache = {} # (idx, curr_sum):
+        # target_sum = sum(nums)/2
+        # cache = {} # (idx, curr_sum):
 
-            # def dfs(idx, curr_sum):
-            #   if idx >= len(num) or curr_sum > target_sum:
-            #     return False
-            
-            #   if curr_sum == target_sum:
-            #     return True
-            
-            #   if (idx, curr_sum) in cache:
-            #     return cache[(idx, curr_sum)]
+        # def dfs(idx, curr_sum):
+        #     if idx >= len(nums) or curr_sum > target_sum:
+        #         return False
+        
+        #     if curr_sum == target_sum:
+        #         return True
+        
+        #     if (idx, curr_sum) in cache:
+        #         return cache[(idx, curr_sum)]
 
-            #   if_partition = dfs(idx+1, curr_sum) or dfs(idx+1, curr_sum + num[idx])
-            #   cache[(idx, curr_sum)] = if_partition
-            #   return if_partition
+        #     if_partition = dfs(idx+1, curr_sum) or dfs(idx+1, curr_sum + nums[idx])
+        #     cache[(idx, curr_sum)] = if_partition
+        #     return if_partition
 
-            # return dfs(0, 0)
+        # return dfs(0, 0)
 
 
 
